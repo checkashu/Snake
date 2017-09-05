@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="vk.example.snake" android:versionCode="1" android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+
+	<application android:allowBackup="true" android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" android:theme="@style/AppTheme">
+		<activity android:name=".cpu">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".GFX1">
+			<intent-filter>
+				<action android:name="android.intent.action.GFX1" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Choose">
+			<intent-filter>
+				<action android:name="android.intent.action.CHOOSE" />
+					
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name="vk.example.snake.FullscreenActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name" android:theme="@style/FullscreenTheme">
+			<intent-filter>
+				<action android:name="vk.example.snake.FULLSCREENACTIVITY" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".GFX">
+			<intent-filter>
+				<action android:name="android.intent.action.GFX" />
+					
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".bird" />
+		<activity android:name=".GFXSurface">
+			<intent-filter>
+				<action android:name="android.intent.action.GFXSURFACE" />
+					
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".dialogue">
+			<intent-filter>
+				<action android:name="android.intent.action.DIALOGUE" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ArrayValue">
+			<intent-filter>
+				<action android:name="android.intent.action.ARRAYVALUE" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Warn">
+			<intent-filter>
+				<action android:name="android.intent.action.WARN" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".WinA">
+			<intent-filter>
+				<action android:name="android.intent.action.WINA" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".WinB">
+			<intent-filter>
+				<action android:name="android.intent.action.WINB" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Settings">
+			<intent-filter>
+				<action android:name="android.intent.action.SETTINGS" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<service android:name="PlayAudio"  android:enabled="true"></service>
+	</application>
+	
+
+</manifest>

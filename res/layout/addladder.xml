@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundbirds" 
+    android:layout_gravity="center"
+ 
+    	>
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/n1"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="50dp"
+        android:background="#fff000"
+        android:ems="5"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/n2"
+        android:layout_alignLeft="@+id/t1"
+        android:text="Nest"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t2"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="26dp"
+        android:background="#0ff011"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/n2"
+        android:layout_alignRight="@+id/quit"
+        android:background="#fff000"
+        android:ems="5"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="Bird"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/add"
+        android:background="#0ff011"
+        android:text="done" />
+
+</RelativeLayout>
